@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+* {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+:root {
+  --primaryColor: rgb(79, 170, 255);
+  --whiteColor: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  z-index: 99;
+  color: var(--primaryColor);
+  width: 300px;
+}
+.advice-number {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+.advice {
+  color: var(--whiteColor);
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.divider {
+  width: 100%;
+}
+.generate-btn {
+  background-color: var(--primaryColor);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.generate-btn:hover{
+    box-shadow: 0 0 5px var(--primaryColor), 0 0 25px #03e9f4, 0 0 5px #03e9f4,
+    0 0 20px #03e9f4;
+}
